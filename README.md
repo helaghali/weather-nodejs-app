@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Weather Snapshot 🌤️
 
 A modern, Dockerized Node.js web app to check the current weather for any city. Features a clean, responsive UI, emoji-based weather display, and supports both Open-Meteo (no API key needed) and OpenWeatherMap (optional API key).
@@ -21,7 +20,6 @@ A modern, Dockerized Node.js web app to check the current weather for any city. 
 cd .\app
 npm install
 npm start
-# Visit http://localhost:3000
 ```
 
 ### Docker
@@ -61,26 +59,10 @@ weather-snapshot/
 ├── dockerfile            # Docker build instructions
 ├── .gitignore            # Git ignore rules
 ├── .dockerignore         # Docker ignore rules
-├── LICENSE               # MIT License
 ├── README.md             # This file
 └── .github/workflows/ci.yml # GitHub Actions CI
-```
-
----
-
-## Contributing
-Pull requests and issues welcome!
-
----
-
-## License
-MIT — see [LICENSE](LICENSE)
 
 
 
 
 
-=======
-# weather-nodejs-app
-Node.js web app to check the current weather for any city
->>>>>>> 385b990deeb4dbcd3864e868803dcc885e63829b

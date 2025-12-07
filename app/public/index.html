@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Weather Snapshot — Dockerized Node App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1 class="app-title">Weather Snapshot</h1>
+        <p class="app-sub">Quick current weather using Open-Meteo</p>
+      </header>
+
+      <form id="search-form" class="search-form" aria-label="Search city">
+        <input id="city" type="text" placeholder="Enter city (e.g. Paris)" required autocomplete="off" />
+        <button type="submit" class="btn">Search</button>
+      </form>
+
+      <section id="result" class="card" aria-live="polite">
+        <div class="left">
+          <div id="icon" class="icon">⛅</div>
+        </div>
+        <div class="right">
+          <div class="place-row">
+            <h2 id="place" class="place">—</h2>
+            <div id="source" class="source muted"></div>
+          </div>
+          <div id="summary" class="summary muted">No data yet. Try searching for a city.</div>
+          <div id="details" class="details"></div>
+        </div>
+        <pre id="raw" class="raw" style="display:none"></pre>
+        <div style="margin-left:auto">
+          <button id="toggle-raw" class="btn raw-toggle">Show JSON</button>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <small>Served from Express + Docker — uses OpenStreetMap & Open-Meteo</small>
+      </footer>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

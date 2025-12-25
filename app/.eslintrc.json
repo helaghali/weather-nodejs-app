@@ -8,5 +8,13 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
+  "overrides": [
+    {
+      "files": ["public/*.js"],
+      "env": {
+        "browser": true
+      }
+    }
+  ],
   "rules": {}
 }

@@ -4,9 +4,10 @@
   "description": "A simple Node.js app running in Docker",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "lint": "eslint ."
   },
-  "dependencies": {
-    "express": "^5.1.0"
+  "devDependencies": {
+    "eslint": "^8.57.0"
   }
 }
